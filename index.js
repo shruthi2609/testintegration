@@ -3,7 +3,7 @@ const app=express()
 require('dotenv').config();
 const bodyparser=require("body-parser")
 const cors=require("cors")
-app.use(cors({origin:"http://localhost:3000",credentials:true}))
+app.use(cors({origin:"https://demointegrationforlyros.netlify.app",credentials:true}))
 app.use(bodyparser.json())
 
 const contactsRoute=require("./route/contactManagerFinal")
